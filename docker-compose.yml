@@ -10,20 +10,24 @@ services:
   consul:
     image: consul
     container_name: consul
-    network_mode: host
+#    network_mode: host
+    ports:
+      - 8500:8500
   zipkin:
     image: openzipkin/zipkin
     container_name: zipkin
     network_mode: host
+    ports:
+      - 9411:9411
   mongo:
     image: mongo
     container_name: mongo
-    network_mode: host
+#    network_mode: host
   kafkaserver:
     image: "spotify/kafka:latest"
     container_name: kafka
     hostname: localhost
-    network_mode: host
+#    network_mode: host
     ports:
       - 2181:2181
       - 9092:9092
