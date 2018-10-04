@@ -22,7 +22,7 @@ if errorlevel 1 exit /B 1
 call mvn clean install -f product-service-api
 if errorlevel 1 exit /B 1
 
-call mvn clean install -f document-service-api -Dmaven.test.skip
+call mvn clean install -f documents-service-api -Dmaven.test.skip
 if errorlevel 1 exit /B 1
 
 call mvn clean install -f auth-service -Dmaven.test.skip
@@ -31,7 +31,7 @@ if errorlevel 1 exit /B 1
 call mvn clean install -f policy-service -Dmaven.test.skip
 if errorlevel 1 exit /B 1
 
-call mvn clean install -f document-service -Dmaven.test.skip
+call mvn clean install -f documents-service -Dmaven.test.skip
 if errorlevel 1 exit /B 1
 
 call mvn clean install -f payment-service -Dmaven.test.skip
@@ -46,7 +46,7 @@ if errorlevel 1 exit /B 1
 call mvn clean install -f product-service -Dmaven.test.skip
 if errorlevel 1 exit /B 1
 
-call mvn clean install -f document-service -Dmaven.test.skip
+call mvn clean install -f documents-service -Dmaven.test.skip
 if errorlevel 1 exit /B 1
 
 call mvn clean install -f agent-portal-gateway -Dmaven.test.skip
